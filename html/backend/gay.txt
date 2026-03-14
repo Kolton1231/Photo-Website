@@ -1,0 +1,85 @@
+You can switch between dark and light modes in CSS using the user's system preferences, an inline CSS function, or a class toggle via JavaScript. 
+W3Schools
+W3Schools
+ +2
+1. Automatic Switching (System Preference)
+The most user-friendly approach is to automatically adapt to the user's operating system settings using the @media query (prefers-color-scheme). 
+CSS:
+css
+/* Default (light mode) styles go here */
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dark mode styles that override the default when the system preference is dark */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: #fff;
+  }
+}
+You can also use the color-scheme property on the :root element to inform the browser that your page supports both modes, which helps adjust default browser UI elements like scrollbars. 
+web.dev
+web.dev
+2. Modern CSS Function (light-dark())
+A newer CSS function, light-dark(), simplifies the code by allowing you to define both colors in one line, which is then automatically selected based on the active color scheme. This is supported in modern browsers since May 2024. 
+MDN Web Docs
+MDN Web Docs
+ +1
+CSS:
+css
+:root {
+  color-scheme: light dark; /* Tells the browser both modes are supported */
+}
+
+body {
+  /* The first value is for light mode, the second for dark mode */
+  background-color: light-dark(#fff, #000);
+  color: light-dark(#000, #fff);
+}
+You can find more details on this feature on MDN Web Docs. 
+3. Manual Toggling (CSS Variables & JavaScript)
+For a user-controlled button to override the system preference, you need JavaScript to toggle a class or data attribute, along with CSS variables. 
+HTML:
+html
+<button onclick="toggleTheme()">Toggle Dark Mode</button>
+CSS:
+css
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #000;
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+JavaScript:
+javascript
+function toggleTheme() {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  // Optional: save preference to localStorage
+  localStorage.setItem('theme', newTheme);
+}
+This method also allows you to save the user's preference in their browser's local storage for future visits.
+
+
+
+<link rel="stylesheet" type="text/css" href="light.css" id="theme-link"/>
+
+
+
+//function changetheme(newstylesheeturl) {
+  const themeLink = document.gelementbyid('theme-link');
+  themelink.setattribute('href', newstylesheetURL);
+
+
+}

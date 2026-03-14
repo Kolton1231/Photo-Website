@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(29, 20, 37);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.button{
+    border-radius: 10px;
+    border: 2px, solid, black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    bottom: 25px;
+    right: 25px;
+    position: fixed;
+}
+
+.sidebutton{
+    border-radius: 10px;
+    border: 2px, solid, black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    bottom: 50px;
+    right: 25px;
+    position: fixed;
+}
+
+
+
+.centerBox{
+    display: flex;
+    background-color: rgb(22, 15, 29);
+    align-items: center;
+    justify-content: center;
+    width:35em;
+    margin-top: 100px;
+    flex-direction: column;
+    border-radius: 15px;
+    
+}
+.inputStyles{
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    height:32px;
+    width:90%;
+    font-size: 22px;
+}
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 6em;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2e2e2e;
+  overflow-x: hidden;
+  padding-top: .25em;
+  padding-left: .25em;
+  border-right: 2px solid rgb(26, 26, 26);
+  transition: 0.5s;
+}
+
+.sidenavbuttons{
+width: 100%;
+background-color: #5c5c5c;
+color:white;
+padding: 10px;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+
+}
+.flex{
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.imagepadding{
+    padding:5px;
+    height: 300px;
+    width: auto;
+}
