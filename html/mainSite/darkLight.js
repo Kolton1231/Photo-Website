@@ -14,17 +14,10 @@ if(colorMode == null){
     colorMode = 1;
     console.log("colorMode was null, set to 1.");
 
-    
-    if(colorMode == 0){
-        themeLink.setAttribute('href', 'lightMode.css');
-        darkButton.innerHTML = "Dark Mode";
-        console.log("dark");
-        colorMode = 0;
-    } else if(colorMode == 1) {
-        themeLink.setAttribute('href', 'darkMode.css');
-        darkButton.innerHTML = "Light Mode";
-        console.log("light");
-        colorMode = 1;
+    if(pageArea == 0){
+        darkLightMode();
+    } else {
+        darkLightMode1();
     }
 }
 });
@@ -39,6 +32,7 @@ darkButton.addEventListener("click", function(){
     }
 });
 
+//For front page
 function darkLightMode(){
     if(colorMode == 1){
         themeLink.setAttribute('href', 'lightMode.css');
@@ -53,7 +47,7 @@ function darkLightMode(){
     }
     localStorage.setItem("darkOrLight",colorMode);
 }
-
+//For sub pages
 function darkLightMode1(){
     if(colorMode == 1){
         themeLink.setAttribute('href', '../lightMode.css');
