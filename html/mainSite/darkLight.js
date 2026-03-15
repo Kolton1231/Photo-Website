@@ -10,11 +10,10 @@ document.addEventListener("DOMContentLoaded", function(){
     console.log(colorMode);
     
 //This is if the page is loaded for the first time.
-    if(pageArea == 0){
-    if(colorMode == 'null'){
-        colorMode = 1;
-        console.log("colorMode was null, set to 1.");
-    }
+if(colorMode == null){
+    colorMode = 1;
+    console.log("colorMode was null, set to 1.");
+
     
     if(colorMode == 0){
         themeLink.setAttribute('href', 'lightMode.css');
