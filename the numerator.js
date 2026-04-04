@@ -1,3 +1,9 @@
+/*=========================
+    IMAGE PATH SCRIPT
+    WRITTEN BY KOLTON ROY
+    4/3/2026
+=========================*/
+
 var integer = 0;
 var largeImageLoc = "";
 var compImageLoc = "";

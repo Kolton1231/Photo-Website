@@ -19,10 +19,10 @@ const sidebarButton = document.getElementById('closeOpenButton');
     navbarP2.addEventListener("click", function(){
         window.location.href= "Cornel2026/page1.html";
     });
-//    navbarP3.addEventListener("click", function(){
-//        window.location.href= "page3.html";
-//    });
-//
+    navbarP3.addEventListener("click", function(){
+        window.location.href= "Cortland2026/page1.html";
+    });
+
 
 
 
