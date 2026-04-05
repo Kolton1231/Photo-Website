@@ -6,6 +6,14 @@ body{
     transition: 0.5s;
 }
 
+.freebutton{
+    border-radius: 10px;
+    border: 2px, solid, black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+
 .button{
     border-radius: 10px;
     border: 2px, solid, black;
