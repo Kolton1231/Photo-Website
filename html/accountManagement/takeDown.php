@@ -18,10 +18,10 @@
     <form action="takeDown.php" method="post">
     
     <p>First Name:</p><br>
-    <input type="text" name="FIRSTNAME"><br>
+    <input type="text" name="FirstName"><br>
     
     <p>Last Name:</p><br>
-    <input type="text" name="LASTNAME"><br>
+    <input type="text" name="LastName"><br>
     
     <p>Event Day (Example: Crush Cancer):</p><br>
     <input type="text" name="EventDay" style="width:25em; text-align: left; vertical-align: text-top;"><br>
@@ -47,11 +47,11 @@
         $FirstName = filter_input(INPUT_POST, "FirstName", FILTER_SANITIZE_SPECIAL_CHARS);
         $LastName = filter_input(INPUT_POST, "LastName", FILTER_SANITIZE_SPECIAL_CHARS);
         $EventDay = filter_input(INPUT_POST, "EventDay", FILTER_SANITIZE_SPECIAL_CHARS);
-        $Event1 =   filter_input(INPUT_POST, "Event", FILTER_SANITIZE_SPECIAL_CHARS);
+        $Event1 =   filter_input(INPUT_POST, "Event1", FILTER_SANITIZE_SPECIAL_CHARS);
 
 
-        $stmt = $conn->prepare("INSERT INTO Takedown (LastName, FirstName, EventDay, Event1) VALUES (?, ?, ?, ?, ?)");
-        $stmt->bind_param("sssss", $LastName, $FirstName, $EventDay, $Event1);
+        $stmt = $conn->prepare("INSERT INTO Takedown (LastName, FirstName, EventDay, Event1) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ssss", $LastName, $FirstName, $EventDay, $Event1);
         $stmt->execute();
 
     if (mysqli_query($conn, $sql)) {
