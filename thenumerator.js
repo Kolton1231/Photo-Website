@@ -11,7 +11,7 @@ var compImageLoc = "";
 
 const fs = require('fs');
 
-const directoryPath = 'C:/replace/these/with/directory'; // Change this to your directory path
+const directoryPath = 'C:/Your/directory/here'; // Change this to your directory path
 const files = fs.readdirSync(directoryPath);
 
 

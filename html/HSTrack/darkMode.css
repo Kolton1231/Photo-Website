@@ -3,7 +3,7 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     font-size: 22px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .button{
@@ -50,28 +50,25 @@ body{
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 6em;
+  width: 10em;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #2e2e2e;
   overflow-x: hidden;
-  padding-top: .25em;
-  padding-left: .25em;
   border-right: 2px solid rgb(26, 26, 26);
-  transition: 0.5s;
+  transition: 1s ease-in-out .25s;
 }
 
 .sidenavbuttons{
 width: 100%;
 background-color: #5c5c5c;
 color:white;
-padding: 10px;
-border-top-left-radius: 15px;
-border-bottom-left-radius: 15px;
-
+padding-top: 15px;
+padding-bottom: 15px;
 }
+
 .flex{
     display: flex;
     margin: 5px;
@@ -82,4 +79,13 @@ border-bottom-left-radius: 15px;
     padding:5px;
     height: 300px;
     width: auto;
+}
+
+.sidenavbuttonsSUB{
+    width: 100%;
+    background-color: #5c5c5c;
+    color:white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: none;
 }
