@@ -2,6 +2,7 @@ const navbarHome = document.getElementById('sidenavB1');
 const navbarP1 = document.getElementById('sidenavB2');
 const navbarP2 = document.getElementById('sidenavB3');
 const navbarP3 = document.getElementById('sidenavB4');
+const navbarP4 = document.getElementById('sidenavB5');
 const sidebarButton = document.getElementById('closeOpenButton');
 
 
@@ -21,6 +22,9 @@ const sidebarButton = document.getElementById('closeOpenButton');
     });
     navbarP3.addEventListener("click", function(){
         window.location.href= "Cortland2026/page1.html";
+    });
+    navbarP3.addEventListener("click", function(){
+        window.location.href= "SUNYACOutdoor2026/page1.html";
     });
 
 
